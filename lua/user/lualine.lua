@@ -34,14 +34,15 @@ function M.config()
     icons_enabled = false,
   }
 
-  local location = {
-    "location",
-    padding = 0,
-  }
+  -- local location = {
+  --   "location",
+  --   padding = 0,
+  -- }
 
   local spaces = function()
     return "spaces: " .. vim.api.nvim_buf_get_option(0, "shiftwidth")
   end
+
   lualine.setup {
     options = {
       globalstatus = true,
@@ -56,8 +57,8 @@ function M.config()
       lualine_a = { "mode" },
       lualine_b = { "branch" },
       lualine_c = { diagnostics },
-      lualine_x = { diff, spaces, "encoding", filetype },
-      lualine_y = { location },
+      lualine_x = { diff, spaces, "encoding" },
+      lualine_y = { filetype },
       lualine_z = { "progress" },
     },
   }

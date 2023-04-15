@@ -1,6 +1,7 @@
 local M = {
   "goolord/alpha-nvim",
   event = "VimEnter",
+  commit = "dafa11a6218c2296df044e00f88d9187222ba6b0",
 }
 
 function M.config()
@@ -24,7 +25,7 @@ function M.config()
     dashboard.button("q", " " .. " Quit", ":qa<CR>"),
   }
   local function footer()
-    return "chrisatmachine.com"
+    return "leow.io"
   end
 
   dashboard.section.footer.val = footer()

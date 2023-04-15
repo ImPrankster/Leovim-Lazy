@@ -29,6 +29,9 @@ function M.config()
     autopairs = {
       enable = true,
     },
+    autotag = {
+      enable = true,
+    },
     indent = { enable = true, disable = { "python", "css" } },
 
     context_commentstring = {
