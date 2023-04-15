@@ -81,3 +81,11 @@ keymap("n", "<leader>dt", "<cmd>lua require'dap'.terminate()<cr>", opts)
 
 -- Lsp
 keymap("n", "<leader>lf", "<cmd>lua vim.lsp.buf.format{ async = true }<cr>", opts)
+
+-- Leo's choice
+keymap("n", "<C-s>", "<cmd>w<CR>", opts)
+keymap("i", "<C-s>", "<ESC>:w<CR>", opts)
+keymap("i", "<C-h>", "<ESC>", opts)
+keymap("i", "<C-l>", "<ESC>", opts)
+keymap("i", "<C-z>", "<ESC>:u<CR>i", opts)
+keymap("n", "<leader>q", "<C-w>q", opts)
