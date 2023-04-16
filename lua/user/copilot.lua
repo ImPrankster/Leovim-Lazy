@@ -14,7 +14,7 @@ function M.config()
         jump_next = "]]",
         accept = "<CR>",
         refresh = "gr",
-        open = "<leader>co",
+        open = ";/",
       },
       layout = {
         position = "bottom", -- | top | left | right
@@ -26,12 +26,12 @@ function M.config()
       auto_trigger = false,
       debounce = 75,
       keymap = {
-        accept = "<C-k>",
+        accept = ";k",
         accept_word = false,
         accept_line = false,
-        next = "<C-.>",
-        prev = "<C-,>",
-        dismiss = "<C-j>",
+        next = ";.",
+        prev = ";,",
+        dismiss = ";j",
       },
     },
   }

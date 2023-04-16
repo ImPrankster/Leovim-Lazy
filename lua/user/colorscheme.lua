@@ -1,10 +1,11 @@
 local M = {
-  "vv9k/bogster",
-  lazy = false, -- make sure we load this during startup if it is your main colorscheme
+  "rebelot/kanagawa.nvim",
+  lazy = false,    -- make sure we load this during startup if it is your main colorscheme
   priority = 1000, -- make sure to load this before all the other start plugins
 }
 
-M.name = "bogster"
+M.name = "kanagawa"
+
 function M.config()
   local status_ok, _ = pcall(vim.cmd.colorscheme, M.name)
   if not status_ok then

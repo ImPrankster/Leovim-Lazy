@@ -1,7 +1,11 @@
 local M = {
   "folke/trouble.nvim",
-  requires = "nvim-tree/nvim-web-devicons",
   event = "Bufenter",
+  dependencies = {
+    {
+      "kyazdani42/nvim-web-devicons",
+    },
+  },
 }
 
 function M.config()
