@@ -86,7 +86,6 @@ keymap("i", "<C-h>", "<ESC>", opts)
 keymap("i", "<C-l>", "<ESC>", opts)
 keymap("i", "<C-z>", "<ESC>:u<CR>i", opts)
 keymap("n", "<C-q>", "<C-w>q", opts)
-keymap("n", "<leader>qq", ":xa<CR>")
 
 -- Hop
 keymap("n", "s", ":HopChar2<CR>", opts)

@@ -21,9 +21,6 @@ function M.config()
     direction = "float",
     close_on_exit = true,
     shell = vim.o.shell,
-    float_opts = {
-      border = "curved",
-    },
   }
 
   function _G.set_terminal_keymaps()
