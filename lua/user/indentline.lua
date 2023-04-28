@@ -10,7 +10,12 @@ vim.cmd [[highlight IndentBlanklineIndent4 guifg=#56B6C2 gui=nocombine]]
 vim.cmd [[highlight IndentBlanklineIndent5 guifg=#61AFEF gui=nocombine]]
 vim.cmd [[highlight IndentBlanklineIndent6 guifg=#C678DD gui=nocombine]]
 
+M.keys = {
+  { "<leader>il", ":IndentBlanklineToggle<CR>", desc = "Toggle indent line" },
+}
+
 M.opts = {
+  enabled = false,
   char = "┆",
   show_trailing_blankline_indent = false,
   show_first_indent_level = true,

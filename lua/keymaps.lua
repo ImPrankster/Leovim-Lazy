@@ -82,14 +82,10 @@ keymap("n", "<leader>dt", "<cmd>lua require'dap'.terminate()<cr>", opts)
 -- Leo's choice
 keymap("n", "<C-s>", "<cmd>w<CR>", opts)
 keymap("i", "<C-s>", "<ESC>:w<CR>", opts)
-keymap("i", "<C-h>", "<ESC>", opts)
 keymap("i", "<C-l>", "<ESC>", opts)
 keymap("i", "<C-z>", "<ESC>:u<CR>i", opts)
 keymap("n", "<C-q>", "<C-w>q", opts)
-
--- Hop
-keymap("n", "s", ":HopChar2<CR>", opts)
-keymap("n", "S", ":HopChar1<CR>", opts)
-
--- TroubleToggle
+keymap("n", "gl", "$", opts)
+keymap("n", "gh", "^", opts)
+keymap("n", "U", "<C-r>", opts)
 keymap("n", "<leader>t", ":TroubleToggle<CR>", opts)

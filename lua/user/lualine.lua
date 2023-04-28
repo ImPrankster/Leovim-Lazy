@@ -17,7 +17,7 @@ function M.config()
     "diagnostics",
     sources = { "nvim_diagnostic" },
     sections = { "error", "warn" },
-    symbols = { error = " ", warn = " " },
+    symbols = { error = " ", warn = " " },
     colored = false,
     always_visible = true,
   }
