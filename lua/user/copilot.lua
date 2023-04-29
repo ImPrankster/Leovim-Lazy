@@ -26,12 +26,12 @@ function M.config()
       auto_trigger = true,
       debounce = 75,
       keymap = {
-        accept = ";k",
+        accept = "<C-i>",
         accept_word = false,
         accept_line = false,
-        next = ";.",
-        prev = ";,",
-        dismiss = ";j",
+        next = "<C-.>",
+        prev = "<C-,>",
+        dismiss = "<C-o>",
       },
     },
   }
