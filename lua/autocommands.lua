@@ -9,12 +9,23 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
 })
 
 vim.api.nvim_create_autocmd({ "FileType" }, {
-  pattern = { "gitcommit", "markdown" },
+  pattern = { "gitcommit" },
   callback = function()
     vim.opt_local.wrap = true
     vim.opt_local.spell = true
   end,
 })
+
+vim.api.nvim_create_autocmd({ "FileType" }, {
+  pattern = { "markdown" },
+  callback = function()
+    vim.opt_local.wrap = true
+    vim.opt_local.spell = true
+    vim.opt.number = false
+    require("cmp").setup.buffer { enabled = false }
+  end,
+})
+
 -- Automatically close tab/vim when nvim-tree is the last window in the tab
 vim.cmd "autocmd BufEnter * ++nested if winnr('$') == 1 && bufname() == 'NvimTree_' . tabpagenr() | quit | endif"
 
