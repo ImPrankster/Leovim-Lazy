@@ -145,10 +145,7 @@ function M.config()
       behavior = cmp.ConfirmBehavior.Replace,
       select = false,
     },
-    window = {
-      completion = cmp.config.window.bordered(),
-      documentation = cmp.config.window.bordered(),
-    },
+    window = {},
     experimental = {
       ghost_text = true,
     },

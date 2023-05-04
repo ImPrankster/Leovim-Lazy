@@ -2,10 +2,8 @@ local M = {
   "willothy/nvim-cokeline",
   event = { "BufReadPre", "BufAdd", "BufNew", "BufReadPost" },
   dependencies = {
-    {
-      "famiu/bufdelete.nvim",
-      "kyazdani42/nvim-web-devicons",
-    },
+    "famiu/bufdelete.nvim",
+    "kyazdani42/nvim-web-devicons",
   },
 }
 
@@ -22,8 +20,8 @@ function M.config()
       end,
       bg = function(buffer)
         return (buffer.diagnostics.errors ~= 0 and errors_fg)
-            or (buffer.diagnostics.warnings ~= 0 and warnings_fg)
-            or ((not buffer.is_focused) and get_hex("ColorColumn", "bg") or get_hex("Normal", "fg"))
+          or (buffer.diagnostics.warnings ~= 0 and warnings_fg)
+          or ((not buffer.is_focused) and get_hex("ColorColumn", "bg") or get_hex("Normal", "fg"))
       end,
     },
 
