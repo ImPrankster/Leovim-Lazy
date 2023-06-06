@@ -12,6 +12,7 @@ M.servers = {
   "bashls",
   "jsonls",
   "yamlls",
+  "prismals",
 }
 
 return M

@@ -1,6 +1,6 @@
 local M = {
   "rebelot/kanagawa.nvim",
-  lazy = false,    -- make sure we load this during startup if it is your main colorscheme
+  lazy = false, -- make sure we load this during startup if it is your main colorscheme
   priority = 1000, -- make sure to load this before all the other start plugins
 }
 
@@ -20,6 +20,7 @@ function M.config()
     overrides = function(colors)
       local theme = colors.theme
       return {
+        WinSeparator = { fg = theme.ui.special },
         TelescopeTitle = { fg = theme.ui.special, bold = true },
         TelescopePromptNormal = { bg = theme.ui.bg_p1 },
         TelescopePromptBorder = { fg = theme.ui.bg_p1, bg = theme.ui.bg_p1 },
