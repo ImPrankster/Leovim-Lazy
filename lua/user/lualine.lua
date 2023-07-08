@@ -22,12 +22,6 @@ function M.config()
     always_visible = true,
   }
 
-  local recording = {
-    require("noice").api.statusline.mode.get,
-    cond = require("noice").api.statusline.mode.has,
-    color = { fg = "#ff9e64" },
-  }
-
   local diff = {
     "diff",
     colored = false,
@@ -64,7 +58,6 @@ function M.config()
       lualine_b = { "branch" },
       lualine_c = {
         diagnostics,
-        recording,
       },
       lualine_x = { diff, spaces, "encoding" },
       lualine_y = { filetype },
